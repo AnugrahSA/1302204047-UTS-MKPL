@@ -6,13 +6,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Date;
 
-public class Employee {
-
-	private String employeeId;
-	private String firstName;
-	private String lastName;
-	private String idNumber;
-	private String address;
+public class Employee extends Wife{
 	
 	private Date tglkerja; 
 	private int monthWorkingInYear;
@@ -27,9 +21,6 @@ public class Employee {
 	private int monthlySalary;
 	private int otherMonthlyIncome;
 	private int annualDeductible;
-	
-	private String spouseName;
-	private String spouseIdNumber;
 
 	private List<String> childNames;
 	private List<String> childIdNumbers;
@@ -78,11 +69,6 @@ public class Employee {
 	
 	public void setAdditionalIncome(int income) {	
 		this.otherMonthlyIncome = income;
-	}
-	
-	public void setSpouse(String spouseName, String spouseIdNumber) {
-		this.spouseName = spouseName;
-		this.spouseIdNumber = idNumber;
 	}
 	
 	public void addChild(String childName, String childIdNumber) {
